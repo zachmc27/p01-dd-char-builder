@@ -1,0 +1,40 @@
+:root {
+ /*color schemes, discuss later */
+}
+* {
+    font-family: "Almendra", serif;
+    
+}
+header {
+   border-bottom: 1px solid;
+   border-width: 5px;
+   text-align: center;
+}
+
+h1 {
+    
+   
+}
+
+section {
+    border: 5px solid;
+    border-radius: 20px;
+}
+
+h2,
+h3,
+h4,
+h5 {
+
+}
+
+footer p {
+   text-align: center; 
+}
+
+/* Use class="btn btn-dark" for continue and back buttons /*
+
+
+
+
+
