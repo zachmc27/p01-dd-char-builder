@@ -1,3 +1,14 @@
+header {
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 {
+    border: 1px solid;
+}
+
 section .directions {
 
 }
