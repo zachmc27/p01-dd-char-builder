@@ -1,8 +1,45 @@
-textarea .appearance {
 
-}
+    .header {
+        background-color: gray;
+    }
+    
+    .btn-danger {
+        margin-top: 1%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
 
-textarea .backstory {
-
-}
-
+    .section-title {
+        margin-left: 10%;
+        margin-top: 0%;
+    }
+    .appearance {
+        margin-top: 0%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+    .backstory {
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 0%;
+    }
+    
+    .form-control {
+        max-height: 25%;
+    }
+    
+    .textarea {
+        border-style: inset;
+        border-width: 10px;
+    }
+    
+    .btn.btn-success {
+        margin-top: 2%;
+        margin-right: 1%;
+        margin-left: 1%;
+    }
+    
+    .footer {
+        margin-top: 2%;
+    }
