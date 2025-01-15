@@ -7,25 +7,80 @@ header {
 
 
 
+
 header h1 {
     border: 1px solid;
 }
 
 .directions {
     position: relative;
-    margin: 100px 20px 0px 20px;
+    margin: 0 auto;
+    margin-top: 100px;
     padding: 10px;
+    width: 90%;
+
+    border-radius: 10px;
 
 }
 
-h2 .your-char {
+.inventory-txt {
     text-decoration: underline;
-}
-
-section .char-box {
-
-}
-
-section .empty-box {
+    text-align: center;
+    margin-top: 100px;
     
 }
+
+.container-fluid {
+    border: 1px solid black;
+    height: 1000px;
+    width: 90%;
+    border: 5px solid;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.card {
+    border: 1px solid black;
+    height: 300px;
+    
+    
+}
+
+#create-card span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 60%;
+    width: 100%;
+    height: 100%;
+    font-size: 150px;
+}
+
+#create-card span:hover {
+    opacity: 100%;
+}
+
+.char-card {
+
+}
+
+.empty-card {
+    height: 100%;
+    width: 100%;
+    background-image: url(../images/Mystery_character-removebg-preview.png);
+    background-position: center 100% ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-blend-mode:soft-light;
+    opacity: 20%;
+}
+
+
+
+
+
+
+footer p {
+    margin-top: 100px;
+}
+
