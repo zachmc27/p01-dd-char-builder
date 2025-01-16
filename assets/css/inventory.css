@@ -62,7 +62,7 @@ header h1 {
 .char-card {
     height: 100%;
     width: 100%;
-    background-image: url(../images/Mystery_character-removebg-preview.png);
+    background-image: url(../images/fighter.png);
     background-position: center 100% ;
     background-repeat: no-repeat;
     background-size: contain;
@@ -93,7 +93,7 @@ header h1 {
     background-repeat: no-repeat;
     background-size: contain;
     background-blend-mode:soft-light;
-    opacity: 80%;
+    opacity: 20%;
 }
 
 .following-row {
