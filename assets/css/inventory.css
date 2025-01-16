@@ -35,14 +35,12 @@ header h1 {
     height: fit-content;
     width: 90%;
     border-radius: 10px;
-  
 }
 
 .card {
     border: 1px solid black;
     height: 300px;
-    
-    
+    position: relative;
 }
 
 #create-card span {
@@ -74,6 +72,7 @@ header h1 {
 .char-card:hover {
     opacity: 100%;
     transition: opacity .5s ;
+    cursor: pointer
 }
 
 
@@ -85,6 +84,7 @@ header h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1;
 
 }
 
@@ -96,6 +96,29 @@ header h1 {
 .char-banner:hover + .char-card {
     opacity: 100%;
     transition: opacity .5s ;
+}
+
+.delete-btn {
+    height: 50px;
+    width: 50px;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-top-left-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background-image: url(../images/trash.png);
+    background-position: center 50%;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    opacity: 30%;
+    z-index: 1;
+}
+
+.delete-btn:hover {
+    opacity: 100%;
+    transition: opacity .5s;
+    cursor: pointer;
 }
 
 
