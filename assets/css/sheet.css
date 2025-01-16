@@ -1,27 +1,61 @@
-section .character-name {
-
+.btn-danger {
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
 }
 
-section .class-and-species {
-
+.col-sm-8 {
+    margin-top: 2%;
 }
 
-section .stats-sheet {
-
+.col-sm-1 {
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
-section .main-boxes {
-
+.con {
+    margin-top: 8%;
+    max-width: 50%;
+    text-align: center;
 }
 
-ul {
-
+.str {
+    margin-top: 8%;
+    max-width: 50%;
+    text-align: center;
 }
 
-li {
-
+.int {
+    margin-top: 8%;
+    max-width: 50%;
+    text-align: center;
 }
 
-button .return-btn {
-    
+.wis {
+    margin-top: 8%;
+    max-width: 50%;
+    text-align: center;
+}
+
+.dex {
+    margin-top: 8%;
+    max-width: 50%;
+    text-align: center;
+}
+
+.cha {
+    margin-top: 8%;
+    max-width: 50%;
+    text-align: center;
+}
+
+.row.gy-5 {
+    margin-top: 0%;
+}
+
+.btn.btn-primary {
+    margin-top: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
