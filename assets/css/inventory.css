@@ -9,7 +9,7 @@ header {
 
 
 header h1 {
-    border: 1px solid;
+ font-size: 50px;
 }
 
 .directions {
@@ -35,7 +35,7 @@ header h1 {
     height: fit-content;
     width: 90%;
     border-radius: 10px;
-    padding: 50px;
+  
 }
 
 .card {
@@ -57,6 +57,7 @@ header h1 {
 
 #create-card span:hover {
     opacity: 100%;
+    transition: opacity .5s
 }
 
 .char-card {
@@ -69,6 +70,13 @@ header h1 {
     background-blend-mode:soft-light;
     opacity: 20%;
 }
+
+.char-card:hover {
+    opacity: 100%;
+    transition: opacity .5s ;
+}
+
+
 
 .char-banner {
     text-align: center;
@@ -85,6 +93,13 @@ header h1 {
     font-size: 30px;
 }
 
+.char-banner:hover + .char-card {
+    opacity: 100%;
+    transition: opacity .5s ;
+}
+
+
+
 .empty-card {
     height: 100%;
     width: 100%;
@@ -96,9 +111,7 @@ header h1 {
     opacity: 20%;
 }
 
-.following-row {
-    margin-top: 50px;
-}
+
 
 
 
