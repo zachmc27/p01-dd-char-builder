@@ -1,15 +1,147 @@
-section .directions {
+header {
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+header h1 {
+ font-size: 50px;
+}
+
+.directions {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 10px;
+    width: 90%;
+
+    border-radius: 10px;
 
 }
 
-h2 .your-char {
+.inventory-txt {
     text-decoration: underline;
-}
-
-section .char-box {
-
-}
-
-section .empty-box {
+    text-align: center;
+    margin-top: 100px;
     
 }
+
+.container-fluid {
+    border: 5px solid rgba(0, 0, 0, 0.7);
+    height: fit-content;
+    width: 90%;
+    border-radius: 10px;
+}
+
+.card {
+    border: 1px solid black;
+    height: 300px;
+    position: relative;
+}
+
+#create-card span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 60%;
+    width: 100%;
+    height: 100%;
+    font-size: 150px;
+}
+
+#create-card span:hover {
+    opacity: 100%;
+    transition: opacity .5s
+}
+
+.char-card {
+    height: 100%;
+    width: 100%;
+    background-image: url(../images/fighter.png);
+    background-position: center 100% ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-blend-mode:soft-light;
+    opacity: 20%;
+}
+
+.char-card:hover {
+    opacity: 100%;
+    transition: opacity .5s ;
+    cursor: pointer
+}
+
+
+
+.char-banner {
+    text-align: center;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+
+}
+
+.char-banner p {
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.char-banner:hover + .char-card {
+    opacity: 100%;
+    transition: opacity .5s ;
+}
+
+.delete-btn {
+    height: 50px;
+    width: 50px;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-top-left-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background-image: url(../images/trash.png);
+    background-position: center 50%;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    opacity: 30%;
+    z-index: 1;
+}
+
+.delete-btn:hover {
+    opacity: 100%;
+    transition: opacity .5s;
+    cursor: pointer;
+}
+
+
+
+.empty-card {
+    height: 100%;
+    width: 100%;
+    background-image: url(../images/Mystery_character-removebg-preview.png);
+    background-position: center 100% ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-blend-mode:soft-light;
+    opacity: 20%;
+}
+
+
+
+
+
+
+
+
+footer p {
+    margin-top: 100px;
+}
+
