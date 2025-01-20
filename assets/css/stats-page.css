@@ -2,14 +2,135 @@ body {
     text-align: center;
 }
 
-.section {
-    display: flex;
-    justify-content: space-around;
-    gap: 20px;
+.classes-box {
+    margin-top: 30px;
 }
 
-.section .tools,
-.section .spells {
+.card {
+    width: 100px;
+    height: 100px;
+}
+
+.weapons-spells-box {
+    margin-top: 30px;
+}
+
+.barbarian {
+    background-image: url(../images/barbarian.png);
+    background-position: center ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    opacity: 50%;
+}
+
+.bard {
+    background-image: url(../images/bard.png);
+    background-position: center ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    opacity: 50%;
+}
+
+.cleric {
+    background-image: url(../images/cleric.png);
+    background-position: center ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    opacity: 50%; 
+}
+
+.druid {
+    background-image: url(../images/druid.png);
+    background-position: center ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    opacity: 50%;
+}
+
+.fighter {
+    background-image: url(../images/fighter.png);
+    background-position: center ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    opacity: 50%;
+}
+
+.paladin {
+    background-image: url(../images/paladin.png);
+    background-position: center ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    opacity: 50%;
+}
+
+.ranger {
+    background-image: url(../images/ranger.png);
+    background-position: center ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    opacity: 50%;
+}
+
+.rogue {
+    background-image: url(../images/rogue.png);
+    background-position: center ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    opacity: 50%;
+}
+
+.warlock {
+    background-image: url(../images/warlock.png);
+    background-position: center ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    opacity: 50%;
+}
+
+.wizard {
+    background-image: url(../images/wizard.png);
+    background-position: center ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    opacity: 50%;
+}
+
+.barbarian:hover, 
+.bard:hover,
+.cleric:hover,
+.druid:hover,
+.fighter:hover,
+.paladin:hover,
+.ranger:hover,
+.rogue:hover,
+.warlock:hover,
+.wizard:hover {
+    opacity: 100%;
+    transition: opacity .5s
+}
+
+.tools,
+.spells {
     border: 5px solid black;
     border-radius: 5px;
     padding: 10px;
@@ -19,8 +140,8 @@ body {
 
 }
 
-.section .tools h3,
-.section .spells h3{
+.tools h3,
+.spells h3{
     font-weight: bold;
 }
 
@@ -32,11 +153,8 @@ body {
     margin: 20px 0px
 }
 
-section .stats {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+.stats-container {
+    margin-top: 30px;
 }
 
 .roll-and-stats {
@@ -65,6 +183,13 @@ section .stats {
     justify-content: center; 
     gap: 20px; 
     text-align: center;
+}
+
+#continue {
+        width: fit-content;
+        height: fit-content;
+        position: relative;
+        top: 10%
 }
 
 .footer {
