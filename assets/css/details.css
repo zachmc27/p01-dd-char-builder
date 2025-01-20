@@ -8,52 +8,27 @@ header {
 .character-name {
     border: solid 5px;
     text-align: left;
-    width: 500px;
+    width: 62%;
     margin: 0 auto;
-    margin-top: 30px;
-    padding: 1px;
-    font-size: 35px;
+    margin-top: 50px;
+    padding: 10px;
+    font-size: 2rem;
     border-radius: 10px;
-
 }
 
-h1,
-h2 {
-    display: inline-block;
+.container-fluid {
+    margin-top: 50px;
+    height: fit-content;
+    width: 90%;
+}
+
+.row div {
     border: solid 5px;
-    text-align: center;
-    width: 200px;
-    margin: 0 auto;
-    margin-top: 30px;
-    margin-left: 410px;
     padding: 1px;
     overflow: hidden;
     border-radius: 10px;
-
 }
 
-h2 {
-    margin-left: 230px;
-}
-
-h3,
-h4 {
-    display: inline-block;
-    border: solid 5px;
-    text-align: center;
-    width: 200px;
-    margin: 0 auto;
-    margin-top: 30px;
-    margin-left: 410px;
-    padding: 1px;
-    overflow: hidden;
-    font-size: 30px;
-    border-radius: 10px;
-}
-
-h4 {
-    margin-left: 230px;
-}
 
 
 .dropdown-toggle {
@@ -68,7 +43,7 @@ h4 {
     display: flex;
     justify-content: right;
     margin-top: 30px;
-    margin-right: 30px;
+    margin-right: 2%;
 }
 
 #back{
@@ -76,14 +51,22 @@ h4 {
     justify-content: left;
     margin-top: 30px;
     margin-right: 30px; 
+    margin-left: 2%
 }
 
 .species {
     border: solid 5px;
+    margin: 0 auto;
     margin-top: 30px;
-    margin-left: 70px;
-    margin-right: 70px;
     border-radius: 10px;
+    width: 62%;
+    padding: 20px;
+    text-align: center;
+}
+
+#choose-species-text {
+    color: rgb(0, 0, 0, .3);
+    margin: 50px
 }
 
 footer p {
