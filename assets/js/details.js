@@ -1,3 +1,17 @@
+const nameInput = document.querySelector('#name');
+const ageInput = document.querySelector('#age');
+const genderInput = document.querySelector('#gender');
+const heightInput = document.querySelector('#height');
+const weightInput = document.querySelector('#weight');
+const speciesInput = document.querySelector('#species');
+const continueButton = document.querySelector('#continue');
+const backButton = document.querySelector('#back');
+
+backButton.addEventListener('click', function() {
+    window.location.href = 'index.html';
+  });
+
+
 const speciesBox = document.querySelector('.species')
 
 document.addEventListener('click', (event) => {
@@ -39,3 +53,41 @@ document.addEventListener('click', (event) => {
         speciesBox.innerHTML = '<h2>Genasi</h2> <p>With elemental blood flowing through their veins, Genasi are powerful beings with a divine connection to fire, water, earth or air. Some genasi live as outcasts, driven into exile for their unsettling appearance and strange magic while others gain positions of great influence, especially where elemental beings are revered.</p>'
     }
 })
+
+
+
+continueButton.addEventListener('click', function (event) {
+    event.preventDefault();
+
+    const name = nameInput.value;
+    const age = ageInput.value;
+    const gender = genderInput.value;
+    const height = heightInput.value;
+    const weight = weightInput.value;
+
+    if (name === '') {
+        displayMessage('error', 'Name cannot be blank');
+      } else if (age === '') {
+        displayMessage('error', 'Age cannot be blank');
+    } else if (gender === '') {
+        displayMessage('error', 'Gender cannot be blank');
+    } else if (height === '') {
+        displayMessage('error', 'Height cannot be blank');
+    } else if (weight === '') {
+        displayMessage('error', 'Weight cannot be blank');
+      } else {
+        displayMessage('success', 'Registered successfully');
+
+    localStorage.setItem('name', nameInput);
+    localStorage.setItem('age', ageInput);
+    localStorage.setItem('gender', genderInput);
+    localStorage.setItem('height', heightInput);
+    localStorage.setItem('weight', weightInput);
+    renderMessage();
+      }
+});
+
+
+continueButton.addEventListener('click', function() {
+  window.location.href = 'stats.html';
+});
