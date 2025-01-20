@@ -76,18 +76,16 @@ continueButton.addEventListener('click', function (event) {
     } else if (weight === '') {
         displayMessage('error', 'Weight cannot be blank');
       } else {
-        displayMessage('success', 'Registered successfully');
+     //   displayMessage('success', 'Registered successfully');
 
-    localStorage.setItem('name', nameInput);
-    localStorage.setItem('age', ageInput);
-    localStorage.setItem('gender', genderInput);
-    localStorage.setItem('height', heightInput);
-    localStorage.setItem('weight', weightInput);
-    renderMessage();
+    localStorage.setItem('name', name);
+    localStorage.setItem('age', age);
+    localStorage.setItem('gender', gender);
+    localStorage.setItem('height', height);
+    localStorage.setItem('weight', weight);
+
+    window.location.href = 'stats.html';
+  //  renderMessage();
       }
 });
 
-
-continueButton.addEventListener('click', function() {
-  window.location.href = 'stats.html';
-});
