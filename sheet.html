@@ -18,7 +18,7 @@
 <div class="header">
 <header> 
     <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-    <button type="button" class="btn btn-danger">Back</button></div> 
+    <button type="button" class="btn btn-danger" id="back">Back</button></div> 
     <h1>D&D Character Builder</h1>
 </header>
 </div>
@@ -29,10 +29,10 @@
 
     <div class="container text-center">
         <div class="row justify-content-md-center">
-          <div class="col-sm-8" style="border: 4px solid black;">
+          <div class="col-sm-8" id="name" style="border: 4px solid black;">
             <p><h2>Character Name</h2></p></div>
 
-          <div class="col-sm-1" style="border: 4px solid black;">
+          <div class="col-sm-1" id="AC" style="border: 4px solid black;">
             <p>AC</p>
             <p>#</p></div>
         </div>
@@ -44,11 +44,11 @@
                 <div class="row gy-5">
                   <div class="col-6">
                     <div class="container" style="border: 4px solid black;">
-                        <div class="p-3"><p><h4>Species</h4></p></div></div>
+                        <div class="p-3" id="species-type"><p><h4>Species</h4></p></div></div>
                   </div>
                   <div class="col-6">
                     <div class="container" style="border: 4px solid black;">
-                        <div class="p-3"><p><h4>Class</h4></p></div></div>
+                        <div class="p-3" id="class-type"><p><h4>Class</h4></p></div></div>
                   </div>
                 </div>
               </div>
@@ -60,7 +60,7 @@
           <div class="col">
             <div class="con">
             <div class="container" style="border: 4px solid black;">
-                <div class="p-3"><p>CON</p>
+                <div class="p-3" id="con"><p>CON</p>
                 <p>#</p>
             </div>
             </div>
@@ -71,7 +71,7 @@
           <div class="col">
             <div class="str">
             <div class="container" style="border: 4px solid black;  ">
-                <div class="p-3"><p>STR</p>
+                <div class="p-3" id="str"><p>STR</p>
                 <p>#</p>
             </div>
             </div>
@@ -82,7 +82,7 @@
           <div class="col">
             <div class="int">
             <div class="container" style="border: 4px solid black; ">
-                <div class="p-3"><p>INT</p>
+                <div class="p-3" id="int"><p>INT</p>
                 <p>#</p>
             </div>
             </div>
@@ -93,7 +93,7 @@
           <div class="col">
             <div class="wis">
             <div class="container" style="border: 4px solid black; ">
-                <div class="p-3"><p>WIS</p>
+                <div class="p-3" id="wis"><p>WIS</p>
                 <p>#</p>
             </div>
             </div>
@@ -104,7 +104,7 @@
           <div class="col">
             <div class="dex">
             <div class="container" style="border: 4px solid black;">
-                <div class="p-3"><p>DEX</p>
+                <div class="p-3" id="dex"><p>DEX</p>
                 <p>#</p>
             </div>
             </div>
@@ -114,7 +114,7 @@
           <div class="col">
           <div class="cha">
             <div class="container" style="border: 4px solid black;  ">
-                <div class="p-3"><p>CHA</p>
+                <div class="p-3"  id="cha"><p>CHA</p>
                 <p>#</p>
             </div>
             </div>
@@ -131,32 +131,32 @@
         <div class="row gy-5">
           <div class="col-6">
             <div class="container" style="border: 4px solid black;">
-                <div class="p-3"><p><h4>Abilities</h4></p>
+                <div class="p-3" id="abilities"><p><h4>Abilities</h4></p>
                   <p>input from class page here.</p></div></div>
           </div>
           <div class="col-6">
             <div class="container" style="border: 4px solid black;">
-                <div class="p-3"><p><h4>Items</h4>
+                <div class="p-3" id="items"><p><h4>Items</h4>
                   <p>input from class page here.</p></div></div>
           </div>
           <div class="col-6">
             <div class="container" style="border: 4px solid black;">
-                <div class="p-3"><p><h4>Details</h4>
+                <div class="p-3" id="details"><p><h4>Details</h4>
                   <p>input from details page here.</p></div></div>
           </div>
           <div class="col-6">
             <div class="container" style="border: 4px solid black;">
-                <div class="p-3"><p><h4>Backstory</h4>
+                <div class="p-3"  id="backstory"><p><h4>Backstory</h4>
                 <p>input from backstory page here.</p></div></div>
           </div>
         </div>
       </div>
 
       <div class="d-grid gap-2">
-        <button class="btn btn-primary" type="button">Return to Gallery</button>
+        <button class="btn btn-primary" type="button" id="return-button">Return to Gallery</button>
       </div>
 
-
+      <script src="./assets/js/sheet.js"></script>
 
 </body>
 
