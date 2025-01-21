@@ -21,9 +21,7 @@ backButton.addEventListener('click', function() {
     window.location.href = 'details.html';
   });
 
-continueButton.addEventListener('click', function() {
-    window.location.href = 'backstory.html';
-  });
+
 
 document.addEventListener('click', (event) => {
   const element = event.target
@@ -546,9 +544,32 @@ document.addEventListener('click', (event) => {
             </div>
           </fieldset>`
   }
-console.log(document.querySelector('.class-data').textContent)
+
 
 })
+
+function chooseWeapon () {
+  const weapon = document.getElementsByName('weapon')
+
+  for(i=0; i < weapon.length; i++) {
+    if (weapon[i].checked) {
+      return weapon[i].value
+    }
+  }
+}
+
+function chooseSpell() {
+  const spells = document.getElementsByName('spells')
+
+  for(i=0; i < spells.length; i++) {
+    if (spells[i].checked) {
+      return spells[i].value
+    }
+  }
+}
+
+
+
 
 //loads on refresh
 if(localStorage.getItem("statsArray") != null) {
@@ -575,6 +596,7 @@ function getRandomIntForStats(max) {
 }
 
 rollButton.addEventListener('click', function() { 
+  
   //if(localStorage.getItem("statsArray") == null) { //allow re-roll for debug
     for(let i=0; i < statsArray.length; i++) {
       statsArray[i] = getRandomIntForStats(20);
@@ -591,4 +613,40 @@ rollButton.addEventListener('click', function() {
   //}
 });
 
+continueButton.addEventListener('click', function(event) {
+  event.preventDefault();
 
+   
+    const chosenClass = document.querySelector('.class-data').textContent;
+    
+    const weapon = chooseWeapon()
+    const spell = chooseSpell()
+    
+    const con = conValue.textContent
+    const str = strValue.textContent
+    const int = intValue.textContent
+    const wis = wisValue.textContent
+    const dex = dexValue.textContent
+    const cha = chaValue.textContent
+    const ac = acValue.textContent
+    
+    
+    
+
+    
+     //   displayMessage('success', 'Registered successfully');
+    storeLocalStorage('class', chosenClass)
+    storeLocalStorage('weapon', weapon)
+    storeLocalStorage('spell', spell)
+    storeLocalStorage('con', con)
+    storeLocalStorage('str', str)
+    storeLocalStorage('int', int)
+    storeLocalStorage('wis', wis)
+    storeLocalStorage('dex', dex)
+    storeLocalStorage('cha', cha)
+    storeLocalStorage('ac', ac)
+    
+    window.location.href = 'backstory.html';
+      
+  });
+  

@@ -69,7 +69,7 @@ header {
     text-align: center;
 }
 
-#choose-species-text {
+.choose-species {
     color: rgb(0, 0, 0, .3);
     margin: 50px
 }

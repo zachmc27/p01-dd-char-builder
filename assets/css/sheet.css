@@ -65,6 +65,10 @@
     margin-right: 20%;
 }
 
+.backstory-box {
+    max-height: 252.8px
+}
+
 .footer {
     margin-top: 2%;
 }
