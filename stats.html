@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./assets/css/stats-page.css">
     <title>D&D Character Builder</title>
 </head>
-<body>
+<body> 
 
    
   <div class="header">
@@ -38,18 +38,32 @@
     </div>
   </div>
         
-  <div class="class-description">
-  </div>
+ 
         
       
   <div class="container weapons-spells-box">
-    <div class="row gap-5">
-      <div class="col-4 tools">
+    <div class="row justify-content-center gap-5">
+      <div class="col-4">
+        <div class="class-description">
+          <h3>About</h3>
+          <p class="empty">Choose a class to see details.</p>
+        </div>
+        <div class="weapons-box">
+        <fieldset>
           <h3>Tools/Weapons</h3>
+          <p class="empty">Choose a class to see tools and weapons.</p>  
+        </fieldset>
+        </div>
       </div>
-      <div class="col-4 spells">
+      
+      <div class="col-4 spells-box">
+        <fieldset>
           <h3>Spells/Abilities</h3>
+          <p class="empty">Choose a class to see spells and abilities.</p>
+        </fieldset>
       </div>
+
+      
     </div>
   </div>
         
@@ -65,64 +79,52 @@
 
       <div class="col p-3 card">
         <p>CON</p>
-        <p>#</p>
+        <p class="con-value">#</p>
       </div>
       
       <div class="col p-3 card">
         <p>STR</p>
-        <p>#</p>
+        <p class="str-value">#</p>
       </div>
 
       <div class="col p-3 card">
         <p>INT</p>
-        <p>#</p>
+        <p class="int-value">#</p>
       </div>
 
       <div class="col p-3 card">
         <p>WIS</p>
-        <p>#</p>
+        <p class="wis-value">#</p>
+      </div>
+
+      <div class="col p-3 card">
+        <p>DEX</p>
+        <p class="dex-value">#</p>
+      </div>
+
+      <div class="col p-3 card">
+        <p>CHA</p>
+        <p class="cha-value">#</p>
+      </div>
+
+      <div class="col p-3 card">
+        <p>AC</p>
+        <p class="ac-value">#</p>
       </div>
 
     </div>
   </div>
-
-  
-
-   
-             
-  
-
-  
-      
-  
-                         
-  
-  
-  
-
-  
-               
-  
-                             
-  
-                
-  <div class="col"></div>
-                
-  <div class="p-3"><p>DEX</p><p>#</p></div>
-              
-  <div class="col"></div>
-                
-  <div class="p-3"><p>CHA</p><p>#</p></div>
-        
-  <div class="col"></div>
-               
-  <div class="p-3"><p>AC</p><p>#</p></div>
-               
-  <div id="continue">
-    <button type="button" id="continue-button" class="btn btn-success text-right">Continue</button>
+          
+  <div class="d-grid gap-2 d-md-flex justify-content-md-end" >
+    <button type="button" class="btn btn-success" id="continue">Continue</button>
   </div>
 
   <script src="./assets/js/stats.js"></script>
 </body>
 
+<footer>
+  <div class="footer">
+      <p>Project by Group 11.</p>
+  </div>
+</footer>
 </html>
