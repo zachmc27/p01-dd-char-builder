@@ -3,7 +3,6 @@ const ageInput = document.querySelector('#age');
 const genderInput = document.querySelector('#gender');
 const heightInput = document.querySelector('#height');
 const weightInput = document.querySelector('#weight');
-const speciesInput = document.querySelector('#species');
 const continueButton = document.querySelector('#continue');
 const backButton = document.querySelector('#back');
 
@@ -64,6 +63,7 @@ continueButton.addEventListener('click', function (event) {
     const gender = genderInput.value;
     const height = heightInput.value;
     const weight = weightInput.value;
+    const species = speciesBox.value;
 
     if (name === '') {
         displayMessage('error', 'Name cannot be blank');
@@ -75,6 +75,8 @@ continueButton.addEventListener('click', function (event) {
         displayMessage('error', 'Height cannot be blank');
     } else if (weight === '') {
         displayMessage('error', 'Weight cannot be blank');
+      } else if (species === '') {
+        displayMessage('error', 'Must make species selection')
       } else {
      //   displayMessage('success', 'Registered successfully');
 
@@ -83,9 +85,9 @@ continueButton.addEventListener('click', function (event) {
     localStorage.setItem('gender', gender);
     localStorage.setItem('height', height);
     localStorage.setItem('weight', weight);
+    localStorage.setItem('species', species);
 
     window.location.href = 'stats.html';
-  //  renderMessage();
       }
 });
 

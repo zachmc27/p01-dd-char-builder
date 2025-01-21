@@ -56,6 +56,22 @@
     margin-top: 0%;
 }
 
+.container1 {
+    min-height: 200px;
+}
+
+.container2 {
+    min-height: 200px;
+}
+
+.container3 {
+    min-height: 300px;
+}
+
+.container4 {
+    min-height: 300px;
+}
+
 .btn.btn-primary {
     margin-top: 2%;
     margin-left: 20%;
