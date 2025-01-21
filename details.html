@@ -40,30 +40,29 @@
     </header>
     
     <div class="character-name">
-        <input type="Character Name" id="name" name="name" placeholder="Character Name">
-        
-        
+        <input type="Character Name" id="name" name="name" placeholder="Character Name" maxLength = "20">
     </div>
+    <p id="char-count">(0/20)</p>
 
     <div class="container-fluid overflow-hidden text-center ">
         <div class="row gy-4 justify-content-center gap-3">
             <div class="col-4 form-floating" >
-                <input type="Age" id="age" name="Age" placeholder="Age" class="form-control">
+                <input type="Age" id="age" name="Age" placeholder="Age" class="form-control" maxLength="6">
                 <label for="floatingInput">Age</label>
             </div>
 
             <div class="col-4 form-floating">
-                <input type="Gender" id="gender" name="Gender" placeholder="Gender" class="form-control">
+                <input type="Gender" id="gender" name="Gender" placeholder="Gender" class="form-control" maxlength="20">
                 <label for="floatingInput">Gender</label>
             </div>
        
             <div class="col-4  form-floating">
-                <input type="Height" id="height" name="Height" placeholder="Height" class="form-control">
+                <input type="Height" id="height" name="Height" placeholder="Height" class="form-control" maxlength="5">
                 <label for="floatingInput">Height</label>
             </div>
             <div class="col-4  form-floating">
-                <input type="Weight" id="weight" name="Weight" placeholder="Weight" class="form-control">
-                <label for="floatingInput">Weight</label>
+                <input type="Weight" id="weight" name="Weight" placeholder="Weight" class="form-control" maxlength="3">
+                <label for="floatingInput">Weight (lbs)</label>
 
             </div>
         </div>
@@ -103,7 +102,7 @@
         crossorigin="anonymous"></script>
 
 
-        <div class="d-grid gap-2 d-md-flex justify-content-md-start text-center">
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end text-center">
             <button type="button" id="continue" class="btn btn-success text-right">Continue</button>
         </div>
 

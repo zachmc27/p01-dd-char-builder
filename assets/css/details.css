@@ -1,3 +1,7 @@
+body {
+    text-align: center;
+}
+
 header {
     border-bottom: 1px solid;
     border-width: 5px;
@@ -14,6 +18,11 @@ header {
     padding: 10px;
     font-size: 2rem;
     border-radius: 10px;
+}
+
+#char-count {
+    position: relative;
+    font-size: 20px;
 }
 
 .container-fluid {
