@@ -21,9 +21,7 @@ backButton.addEventListener('click', function() {
     window.location.href = 'details.html';
   });
 
-continueButton.addEventListener('click', function() {
-    window.location.href = 'backstory.html';
-  });
+
 
 document.addEventListener('click', (event) => {
   const element = event.target
@@ -39,7 +37,7 @@ document.addEventListener('click', (event) => {
     document.querySelector('.rogue').style.opacity = ''
     document.querySelector('.warlock').style.opacity = ''
     document.querySelector('.wizard').style.opacity = ''
-    classDescription.innerHTML = `<h3>About</h3> <p>Barbarians come alive in the chaos of combat. They rely on strength and fury in a fight rather than wit or cunning and have the constitution to power through. </p>`
+    classDescription.innerHTML = `<h3 class='class-data'>Barbarian</h3> <p>Barbarians come alive in the chaos of combat. They rely on strength and fury in a fight rather than wit or cunning and have the constitution to power through. </p>`
     weaponsBox.innerHTML = ` <fieldset class="weapons">
           <h3>Tools/Weapons</h3>  
           
@@ -90,7 +88,7 @@ document.addEventListener('click', (event) => {
     document.querySelector('.rogue').style.opacity = ''
     document.querySelector('.warlock').style.opacity = ''
     document.querySelector('.wizard').style.opacity = ''
-    classDescription.innerHTML = `<h3>About</h3> <p>The greatest strength of bards is their sheer versatility. Words and music are not just vibrations of air, but vocalizations with power all their own. The bard is a master of song, speech, and the magic they contain. </p>`
+    classDescription.innerHTML = `<h3 class='class-data'>Bard</h3> <p>The greatest strength of bards is their sheer versatility. Words and music are not just vibrations of air, but vocalizations with power all their own. The bard is a master of song, speech, and the magic they contain. </p>`
 
     weaponsBox.innerHTML = ` <fieldset class="weapons">
           <h3>Tools/Weapons</h3>  
@@ -142,7 +140,7 @@ document.addEventListener('click', (event) => {
     document.querySelector('.rogue').style.opacity = ''
     document.querySelector('.warlock').style.opacity = ''
     document.querySelector('.wizard').style.opacity = ''
-    classDescription.innerHTML = `<h3>About</h3> <p>Clerics draw power from the realms of the gods and harness it to work miracles. Blessed by their deific patron, a Cleric can reach out to the divine magic of the Outer Planes—where gods dwell—and channel it to bolster people and battle foes. </p>`
+    classDescription.innerHTML = `<h3 class='class-data'>Cleric</h3> <p>Clerics draw power from the realms of the gods and harness it to work miracles. Blessed by their deific patron, a Cleric can reach out to the divine magic of the Outer Planes—where gods dwell—and channel it to bolster people and battle foes. </p>`
 
     weaponsBox.innerHTML = ` <fieldset class="weapons">
           <h3>Tools/Weapons</h3>  
@@ -194,7 +192,7 @@ document.addEventListener('click', (event) => {
     document.querySelector('.rogue').style.opacity = ''
     document.querySelector('.warlock').style.opacity = ''
     document.querySelector('.wizard').style.opacity = ''
-    classDescription.innerHTML = `<h3>About</h3> <p>Druids are an embodiment of nature’s resilience, cunning, and fury. They claim no mastery over nature. Instead, they see themselves as extensions of nature’s indomitable will.</p>`
+    classDescription.innerHTML = `<h3 class='class-data'>Druid</h3> <p>Druids are an embodiment of nature’s resilience, cunning, and fury. They claim no mastery over nature. Instead, they see themselves as extensions of nature’s indomitable will.</p>`
 
     weaponsBox.innerHTML = ` <fieldset class="weapons">
           <h3>Tools/Weapons</h3>  
@@ -246,7 +244,7 @@ document.addEventListener('click', (event) => {
     document.querySelector('.rogue').style.opacity = ''
     document.querySelector('.warlock').style.opacity = ''
     document.querySelector('.wizard').style.opacity = ''
-    classDescription.innerHTML = `<h3>About</h3> <p>Fighters learn the basics of all combat styles. Every fighter can swing an axe, fence with a rapier, wield a longsword, and use a bow with some degree of skill. This combination of broad general ability makes fighters superior combatants.</p>`
+    classDescription.innerHTML = `<h3 class='class-data'>Fighter</h3> <p>Fighters learn the basics of all combat styles. Every fighter can swing an axe, fence with a rapier, wield a longsword, and use a bow with some degree of skill. This combination of broad general ability makes fighters superior combatants.</p>`
 
     weaponsBox.innerHTML = ` <fieldset class="weapons">
           <h3>Tools/Weapons</h3>  
@@ -298,7 +296,7 @@ document.addEventListener('click', (event) => {
     document.querySelector('.rogue').style.opacity = ''
     document.querySelector('.warlock').style.opacity = ''
     document.querySelector('.wizard').style.opacity = ''
-    classDescription.innerHTML = `<h3>About</h3> <p>A paladin swears to uphold justice and righteousness, to stand with the good things of the world against the darkness, and to hunt the forces of evil wherever they lurk. They are bound by the oaths that grant them power to do their sacred work.</p>`
+    classDescription.innerHTML = `<h3 class='class-data'>Paladin</h3> <p>A paladin swears to uphold justice and righteousness, to stand with the good things of the world against the darkness, and to hunt the forces of evil wherever they lurk. They are bound by the oaths that grant them power to do their sacred work.</p>`
 
     weaponsBox.innerHTML = ` <fieldset class="weapons">
           <h3>Tools/Weapons</h3>  
@@ -350,7 +348,7 @@ document.addEventListener('click', (event) => {
     document.querySelector('.rogue').style.opacity = ''
     document.querySelector('.warlock').style.opacity = ''
     document.querySelector('.wizard').style.opacity = ''
-    classDescription.innerHTML = `<h3>About</h3> <p>Warriors of the wilderness, rangers specialize in hunting the monsters that threaten civilization. A ranger’s talents and abilities are honed with deadly focus on the grim task of protecting their people.</p>`
+    classDescription.innerHTML = `<h3 class='class-data'>Ranger</h3> <p>Warriors of the wilderness, rangers specialize in hunting the monsters that threaten civilization. A ranger’s talents and abilities are honed with deadly focus on the grim task of protecting their people.</p>`
 
     weaponsBox.innerHTML = ` <fieldset class="weapons">
           <h3>Tools/Weapons</h3>  
@@ -402,7 +400,7 @@ document.addEventListener('click', (event) => {
     document.querySelector('.rogue').style.opacity = '100%'
     document.querySelector('.warlock').style.opacity = ''
     document.querySelector('.wizard').style.opacity = ''
-    classDescription.innerHTML = `<h3>About</h3> <p>Rogues typically focus on stealth, deception and cunning over brute strength. They would rather make one precise strike, placing it exactly where the attack will hurt the target most, than wear an opponent down with a barrage of attacks.</p>`
+    classDescription.innerHTML = `<h3 class='class-data'>Rogue</h3> <p>Rogues typically focus on stealth, deception and cunning over brute strength. They would rather make one precise strike, placing it exactly where the attack will hurt the target most, than wear an opponent down with a barrage of attacks.</p>`
 
     weaponsBox.innerHTML = ` <fieldset class="weapons">
           <h3>Tools/Weapons</h3>  
@@ -454,7 +452,7 @@ document.addEventListener('click', (event) => {
     document.querySelector('.rogue').style.opacity = ''
     document.querySelector('.warlock').style.opacity = '100%'
     document.querySelector('.wizard').style.opacity = ''
-    classDescription.innerHTML = `<h3>About</h3> <p>A warlock is defined by a pact with an otherworldly being that grants them power. The pact may be nefarious in nature, or it may resemble the arrangement between a master and an apprentice, but it never comes without a price.</p>`
+    classDescription.innerHTML = `<h3 class='class-data'>Warlock</h3> <p>A warlock is defined by a pact with an otherworldly being that grants them power. The pact may be nefarious in nature, or it may resemble the arrangement between a master and an apprentice, but it never comes without a price.</p>`
 
     weaponsBox.innerHTML = ` <fieldset class="weapons">
           <h3>Tools/Weapons</h3>  
@@ -506,7 +504,7 @@ document.addEventListener('click', (event) => {
     document.querySelector('.rogue').style.opacity = ''
     document.querySelector('.warlock').style.opacity = ''
     document.querySelector('.wizard').style.opacity = '100%'
-    classDescription.innerHTML = `<h3>About</h3> <p>Wizards are supreme magic-users, defined and united as a class by the spells they cast. Drawing on the subtle weave of magic that permeates the cosmos, they dedicate their lives to the study of magic and spellcasting.</p>`
+    classDescription.innerHTML = `<h3 class='class-data'>Wizard</h3> <p>Wizards are supreme magic-users, defined and united as a class by the spells they cast. Drawing on the subtle weave of magic that permeates the cosmos, they dedicate their lives to the study of magic and spellcasting.</p>`
 
     weaponsBox.innerHTML = ` <fieldset class="weapons">
           <h3>Tools/Weapons</h3>  
@@ -546,7 +544,32 @@ document.addEventListener('click', (event) => {
             </div>
           </fieldset>`
   }
+
+
 })
+
+function chooseWeapon () {
+  const weapon = document.getElementsByName('weapon')
+
+  for(i=0; i < weapon.length; i++) {
+    if (weapon[i].checked) {
+      return weapon[i].value
+    }
+  }
+}
+
+function chooseSpell() {
+  const spells = document.getElementsByName('spells')
+
+  for(i=0; i < spells.length; i++) {
+    if (spells[i].checked) {
+      return spells[i].value
+    }
+  }
+}
+
+
+
 
 //loads on refresh
 if(localStorage.getItem("statsArray") != null) {
@@ -573,6 +596,7 @@ function getRandomIntForStats(max) {
 }
 
 rollButton.addEventListener('click', function() { 
+  
   //if(localStorage.getItem("statsArray") == null) { //allow re-roll for debug
     for(let i=0; i < statsArray.length; i++) {
       statsArray[i] = getRandomIntForStats(20);
@@ -588,3 +612,41 @@ rollButton.addEventListener('click', function() {
     localStorage.setItem("statsArray", JSON.stringify(statsArray));
   //}
 });
+
+continueButton.addEventListener('click', function(event) {
+  event.preventDefault();
+
+   
+    const chosenClass = document.querySelector('.class-data').textContent;
+    
+    const weapon = chooseWeapon()
+    const spell = chooseSpell()
+    
+    const con = conValue.textContent
+    const str = strValue.textContent
+    const int = intValue.textContent
+    const wis = wisValue.textContent
+    const dex = dexValue.textContent
+    const cha = chaValue.textContent
+    const ac = acValue.textContent
+    
+    
+    
+
+    
+     //   displayMessage('success', 'Registered successfully');
+    storeLocalStorage('class', chosenClass)
+    storeLocalStorage('weapon', weapon)
+    storeLocalStorage('spell', spell)
+    storeLocalStorage('con', con)
+    storeLocalStorage('str', str)
+    storeLocalStorage('int', int)
+    storeLocalStorage('wis', wis)
+    storeLocalStorage('dex', dex)
+    storeLocalStorage('cha', cha)
+    storeLocalStorage('ac', ac)
+    
+    window.location.href = 'backstory.html';
+      
+  });
+  

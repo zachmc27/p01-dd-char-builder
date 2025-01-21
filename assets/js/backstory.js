@@ -10,15 +10,6 @@ document.addEventListener('click', (event) => {
     if (element.matches('#back-btn') === true) {
         redirectPage('stats.html')
     }
-
-    if (element.matches('#submit-btn') === true) {
-        console.log('modal')
-    }
-
-    if (element.matches('#complete-btn') === true) {
-        console.log('working')
-        redirectPage('sheet.html')
-    }
 })
 
 
@@ -28,17 +19,9 @@ completeButton.addEventListener('click', function (event) {
     const appearance = appearanceInput.value;
     const backstory = backstoryInput.value;
 
-    if (appearance === '') {
-        displayMessage('error', 'These details cannot be blank');
-      } else if (backstory === '') {
-        displayMessage('error', 'These details cannot be blank');
-     } else {
-     //   displayMessage('success', 'Registered successfully');
-
-    localStorage.setItem('appearance', appearance);
-    localStorage.setItem('backstory', backstory);
-
-    window.location.href = 'index.html';
-      }
+    storeLocalStorage('appearance', appearance);
+    storeLocalStorage('backstory', backstory);
+    
+    window.location.href = 'sheet.html';
 });
 

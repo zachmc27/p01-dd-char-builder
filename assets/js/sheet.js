@@ -1,10 +1,33 @@
+
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl, {
     html: true
 }))
+ const characterArray = JSON.parse(localStorage.getItem('characterList')) || []
+
+const characterData = {
+    name: JSON.parse(localStorage.getItem('name')) || "",
+    ac: JSON.parse(localStorage.getItem('ac')) || "",
+    species: JSON.parse(localStorage.getItem('species')) || "",
+    class: JSON.parse(localStorage.getItem('class')) || "",
+    con: JSON.parse(localStorage.getItem('con')) || "",
+    str: JSON.parse(localStorage.getItem('str')) || "",
+    int: JSON.parse(localStorage.getItem('int')) || "",
+    wis: JSON.parse(localStorage.getItem('wis')) || "",
+    dex: JSON.parse(localStorage.getItem('dex')) || "",
+    cha: JSON.parse(localStorage.getItem('cha')) || "",
+    abilities: JSON.parse(localStorage.getItem('spell')) || "",
+    items: JSON.parse(localStorage.getItem('weapon')) || "",
+   
+    age: JSON.parse(localStorage.getItem('age')) || "",
+    height: JSON.parse(localStorage.getItem('height')) || "",
+    weight: JSON.parse(localStorage.getItem('weight')) || "",
+    gender: JSON.parse(localStorage.getItem('gender')) || "",
+    backstory: JSON.parse(localStorage.getItem('backstory')) || "",
+
+}
 
 document.addEventListener("DOMContentLoaded", () => {
-    const characterData = readLocalStorage();
 
     if (characterData) {
         populateCharacterSheet(characterData);
@@ -24,8 +47,8 @@ function populateCharacterSheet(data) {
     document.querySelector("h2").textContent = data.name || "Unnamed Character";
     document.querySelector(".col-sm-1 p:nth-child(2)").textContent = data.ac || "#";
 
-    document.querySelector(".row .col-6:nth-child(1) .p-3").textContent = data.species || "Unknown Species";
-    document.querySelector(".row .col-6:nth-child(2) .p-3").textContent = data.class || "Unknown Class";
+    document.querySelector("#species-text").textContent = data.species || "Unknown Species";
+    document.querySelector("#class-text").textContent = data.class || "Unknown Class";
 
     document.querySelector(".con .p-3 p:nth-child(2)").textContent = data.con || "#";
     document.querySelector(".str .p-3 p:nth-child(2)").textContent = data.str || "#";
@@ -34,46 +57,33 @@ function populateCharacterSheet(data) {
     document.querySelector(".dex .p-3 p:nth-child(2)").textContent = data.dex || "#";
     document.querySelector(".cha .p-3 p:nth-child(2)").textContent = data.cha || "#";
 
-    document.querySelector(".row .col-6:nth-child(5) .p-3").textContent = data.abilities || "None";
-    document.querySelector(".row .col-6:nth-child(6) .p-3").textContent = data.items || "None";
-    document.querySelector(".row .col-6:nth-child(3) .p-3").textContent = data.details || "None";
-    document.querySelector(".row .col-6:nth-child(4) .p-3").textContent = data.backstory || "None";
+    
+
+    document.querySelector("#abilities-text").textContent = data.abilities || "None";
+    document.querySelector("#items-text").textContent = data.items || "None";
+    document.querySelector("#age-text").textContent = data.age || "None";
+    document.querySelector("#gender-text").textContent = data.height || "None";
+    document.querySelector("#height-text").textContent = data.weight || "None";
+    document.querySelector("#weight-text").textContent = data.gender || "None";
+    document.querySelector("#backstory-text").textContent = data.backstory || "None";
+
+    
+   
 }
-
-
-
-
-function redirectToPage(pageUrl) {
-    window.location.href = pageUrl;
-}
-const backstoryBox = Array.from(document.querySelectorAll('.row.gy-5 .col-6:nth-of-type(4) .container')).find(
-    box => box.textContent.trim().includes('Backstory')
-);
-if (backstoryBox) {
-    backstoryBox.style.cursor = "pointer";
-
-    backstoryBox.addEventListener('click', () => {
-        const backstoryText = backstoryBox.querySelector("p")?.innerText;
-        localStorage.setItem("backstory", backstoryText);
-        redirectToPage('backstory.html');
-    })
-}
-
-
 
 const returnButton = document.querySelector('#return-button');
 const backButton = document.querySelector('#back');
-
-
-
-
-
 
 backButton.addEventListener('click', function() {
     window.location.href = 'backstory.html';
   });
 
+
+console.log(characterArray)
+
 returnButton.addEventListener('click', function() {
+    characterArray.push(characterData)
+    localStorage.setItem('characterList', JSON.stringify(characterArray))
     window.location.href = 'index.html';
   });
 

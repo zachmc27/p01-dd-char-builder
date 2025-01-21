@@ -1,11 +1,11 @@
 /* save data to local storage */
-function storeLocalStorage (data) {
-    localStorage.setItem(`${data}`, JSON.stringify(data))
+function storeLocalStorage (dataName, data) {
+    localStorage.setItem(dataName, JSON.stringify(data))
     }
 
     /* get data from local storage */
     function readLocalStorage (data) {
-    return JSON.parse(localStorage.getItem(`${data}`))
+    return JSON.parse(localStorage.getItem(data))
     }
     /* redirect page */
     let redirectURL = '';
@@ -15,6 +15,8 @@ function storeLocalStorage (data) {
       location.assign(url);
     };
 
+  
+    
 
-
+   
     
