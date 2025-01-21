@@ -67,7 +67,7 @@ header h1 {
     background-size: contain;
     background-blend-mode:soft-light;
     opacity: 20%;
-}
+} 
 
 .char-card:hover {
     opacity: 100%;

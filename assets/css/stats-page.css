@@ -1,29 +1,187 @@
 body {
     text-align: center;
-}
-
-.section {
+    width: 100%;
     display: flex;
-    justify-content: space-around;
-    gap: 20px;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-.section .tools,
-.section .spells {
+    
+
+.container {
+    flex: 1;
+}
+
+#back {
+    margin-left: 1%;
+    margin-top: 1%;
+}
+
+
+.classes-box {
+    margin-top: 30px;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+}
+
+.weapons-spells-box {
+    margin-top: 30px;
+}
+
+.barbarian {
+    background-image: url(../images/barbarian.png);
+    background-position: center ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    opacity: 50%;
+}
+
+.bard {
+    background-image: url(../images/bard.png);
+    background-position: center ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    opacity: 50%;
+}
+
+.cleric {
+    background-image: url(../images/cleric.png);
+    background-position: center ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    opacity: 50%; 
+}
+
+.druid {
+    background-image: url(../images/druid.png);
+    background-position: center ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    opacity: 50%;
+}
+
+.fighter {
+    background-image: url(../images/fighter.png);
+    background-position: center ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    opacity: 50%;
+}
+
+.paladin {
+    background-image: url(../images/paladin.png);
+    background-position: center ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    opacity: 50%;
+}
+
+.ranger {
+    background-image: url(../images/ranger.png);
+    background-position: center ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    opacity: 50%;
+}
+
+.rogue {
+    background-image: url(../images/rogue.png);
+    background-position: center ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    opacity: 50%;
+}
+
+.warlock {
+    background-image: url(../images/warlock.png);
+    background-position: center ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    opacity: 50%;
+}
+
+.wizard {
+    background-image: url(../images/wizard.png);
+    background-position: center ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    opacity: 50%;
+}
+
+.barbarian:hover, 
+.bard:hover,
+.cleric:hover,
+.druid:hover,
+.fighter:hover,
+.paladin:hover,
+.ranger:hover,
+.rogue:hover,
+.warlock:hover,
+.wizard:hover {
+    opacity: 100%;
+    transition: opacity .5s
+}
+
+.empty {
+    color: rgb(0, 0, 0, .5)
+}
+
+.weapons-box,
+.spells-box, .class-description {
     border: 5px solid black;
     border-radius: 5px;
     padding: 10px;
-    height: 200px;
-    width: 300px;
+    height: fit-content;
     text-align: center;
 
 }
 
-.section .tools h3,
-.section .spells h3{
+
+
+.weapons-box {
+    margin-top: 10px;
+}
+
+.weapons-box h3,
+.spells-box h3,
+.class-description h3{
     font-weight: bold;
 }
 
+.weapons-box label {
+    font-size: 25px;
+}
+
+.spells-box label {
+    font-size: 20px;
+}
+
+.label-size {
+    font-size: 25px;
+}
 
 
 .roll-btn {
@@ -32,41 +190,13 @@ body {
     margin: 20px 0px
 }
 
-section .stats {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+.stats-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
-.roll-and-stats {
-    display: flex;
-    justify-content: space-around;
-    align-items: center; 
-    gap: 20px; 
-    padding: 20px;
-    border: 1px solid black;
-    border-radius: 5px;
+#continue {
+        margin-right: 1%
 }
 
-.stats > div {
-    width: 60px;
-    border: 2px solid;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; 
-    gap: 20px; 
-    text-align: center;
-}
-
-.footer {
-    margin-top: 2%;
-}

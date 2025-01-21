@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./assets/css/stats-page.css">
     <title>D&D Character Builder</title>
 </head>
-<body>
+<body> 
 
    
   <div class="header">
@@ -21,117 +21,110 @@
         <h1>D&D Character Builder</h1>
     </header>
     </div>
-    </head>
+  </head>
    
-    <div class="container text-center">
-      <div class="row row-cols-auto">
-        <button class="col">Class 1</button>
-        <button class="col">Class 2</button>
-        <button class="col">Class 3</button>
-        <button class="col">Class 4</button>
-        <button class="col">Class 5</button>
-        <button class="col">Class 6</button>
-        <button class="col">Class 7</button>
-        <button class="col">Class 8</button>
-        <button class="col">Class 9</button>
-        <button class="col">Class 10</button>
-      </div>
+  <div class="container text-center classes-box">
+    <div class="row row-cols-auto justify-content-center gap-3">
+      <div class="col card p-1">Barbarian<span class="barbarian"></span></div>
+      <div class="col card p-1">Bard<span class="bard"></span></div>
+      <div class="col card p-1">Cleric<span class="cleric"></span></div>
+      <div class="col card p-1">Druid <span class="druid"></span></div>
+      <div class="col card p-1">Fighter <span class="fighter"></span></div>
+      <div class="col card p-1">Paladin <span class="paladin"></span></div>
+      <div class="col card p-1">Ranger <span class="ranger"></span></div>
+      <div class="col card p-1">Rogue <span class="rogue"></span></div>
+      <div class="col card p-1">Warlock <span class="warlock"></span></div>
+      <div class="col card p-1">Wizard <span class="wizard"></span></div>
     </div>
+  </div>
         
-          <div class="class-description">
-        </div>
+ 
         
       
-        <div class="section">
-            <div class="tools">
-                <h3>Tools/Weapons</h3>
-               
-            </div>
-            <div class="spells">
-                <h3>Spells/Abilities</h3>
-                
-            </div>
+  <div class="container weapons-spells-box">
+    <div class="row justify-content-center gap-5">
+      <div class="col-4">
+        <div class="class-description">
+          <h3>About</h3>
+          <p class="empty">Choose a class to see details.</p>
         </div>
+        <div class="weapons-box">
+        <fieldset>
+          <h3>Tools/Weapons</h3>
+          <p class="empty">Choose a class to see tools and weapons.</p>  
+        </fieldset>
+        </div>
+      </div>
+      
+      <div class="col-4 spells-box">
+        <fieldset>
+          <h3>Spells/Abilities</h3>
+          <p class="empty">Choose a class to see spells and abilities.</p>
+        </fieldset>
+      </div>
+
+      
+    </div>
+  </div>
         
         
        
 
-        <div class="container">
-            <div class="row justify-content-md-center row-cols-2 row-cols-lg-6 g-2 g-lg-3" >
-            <div class="col-6 col-sm-12">  
-            <button class="btn btn-dark p-3 roll-btn">Roll</button>       
-            </div>   
-    
-              <div class="col">
-                <div class="con">
-                <div class="container" style="border: 4px solid black;">
-                    <div class="p-3"><p>CON</p>
-                    <p>#</p>
-                </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-                <div class="con">
-                <div class="container" style="border: 4px solid black;">
-                    <div class="p-3"><p>STR</p>
-                    <p>#</p>
-                </div>
-                </div>
-              </div>
-            </div>
-              <div class="col">
-                <div class="con">
-                <div class="container" style="border: 4px solid black;">
-                    <div class="p-3"><p>INT</p>
-                    <p>#</p>
-                </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-                <div class="con">
-                <div class="container" style="border: 4px solid black;">
-                    <div class="p-3"><p>WIS</p>
-                    <p>#</p>
-                </div>
-                </div>
-              </div>
-            </div>
-              <div class="col">
-                <div class="con">
-                <div class="container" style="border: 4px solid black;">
-                    <div class="p-3"><p>DEX</p>
-                    <p>#</p>
-                </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-                <div class="con">
-                <div class="container" style="border: 4px solid black;">
-                    <div class="p-3"><p>CHA</p>
-                    <p>#</p>
-                </div>
-                </div>
-              </div>
-            </div>
-              <div class="col">
-                <div class="con">
-                <div class="container" style="border: 4px solid black;">
-                    <div class="p-3"><p>AC</p>
-                    <p>#</p>
-                </div>
-                </div>
-              </div>
-            </div>
+  <div class="container stats-container">
+    <div class="row justify-content-md-center row-cols-2 row-cols-lg-6 g-2 g-lg-3">
 
+      <div class="col-6 col-sm-12">
+        <button class="btn btn-dark p-3 roll-btn">Roll</button>
+      </div>
 
-            <div id="continue">
-              <button type="button" id="continue-button" class="btn btn-success text-right">Continue</button>
-          </div>
+      <div class="col p-3 card">
+        <p>CON</p>
+        <p class="con-value">#</p>
+      </div>
+      
+      <div class="col p-3 card">
+        <p>STR</p>
+        <p class="str-value">#</p>
+      </div>
 
-          <script src="./assets/js/stats.js"></script>
+      <div class="col p-3 card">
+        <p>INT</p>
+        <p class="int-value">#</p>
+      </div>
+
+      <div class="col p-3 card">
+        <p>WIS</p>
+        <p class="wis-value">#</p>
+      </div>
+
+      <div class="col p-3 card">
+        <p>DEX</p>
+        <p class="dex-value">#</p>
+      </div>
+
+      <div class="col p-3 card">
+        <p>CHA</p>
+        <p class="cha-value">#</p>
+      </div>
+
+      <div class="col p-3 card">
+        <p>AC</p>
+        <p class="ac-value">#</p>
+      </div>
+
+    </div>
+  </div>
+          
+  <div class="d-grid gap-2 d-md-flex justify-content-md-end" >
+    <button type="button" class="btn btn-success" id="continue">Continue</button>
+  </div>
+
+  <script src="./assets/js/stats.js"></script>
 </body>
 
+<footer>
+  <div class="footer">
+      <p>Project by Group 11.</p>
+  </div>
+</footer>
 </html>
