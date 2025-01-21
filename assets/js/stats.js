@@ -18,6 +18,16 @@ document.addEventListener('click', (event) => {
   const element = event.target
 
   if (element.matches('.barbarian') === true) {
+    document.querySelector('.barbarian').style.opacity = '100%'
+    document.querySelector('.bard').style.opacity = ''
+    document.querySelector('.cleric').style.opacity = ''
+    document.querySelector('.druid').style.opacity = ''
+    document.querySelector('.fighter').style.opacity = ''
+    document.querySelector('.paladin').style.opacity = ''
+    document.querySelector('.ranger').style.opacity = ''
+    document.querySelector('.rogue').style.opacity = ''
+    document.querySelector('.warlock').style.opacity = ''
+    document.querySelector('.wizard').style.opacity = ''
     classDescription.innerHTML = `<h3>About</h3> <p>Barbarians come alive in the chaos of combat. They rely on strength and fury in a fight rather than wit or cunning and have the constitution to power through. </p>`
     weaponsBox.innerHTML = ` <fieldset class="weapons">
           <h3>Tools/Weapons</h3>  
@@ -59,6 +69,16 @@ document.addEventListener('click', (event) => {
   } 
   
   if (element.matches('.bard') === true) {
+    document.querySelector('.barbarian').style.opacity = ''
+    document.querySelector('.bard').style.opacity = '100%'
+    document.querySelector('.cleric').style.opacity = ''
+    document.querySelector('.druid').style.opacity = ''
+    document.querySelector('.fighter').style.opacity = ''
+    document.querySelector('.paladin').style.opacity = ''
+    document.querySelector('.ranger').style.opacity = ''
+    document.querySelector('.rogue').style.opacity = ''
+    document.querySelector('.warlock').style.opacity = ''
+    document.querySelector('.wizard').style.opacity = ''
     classDescription.innerHTML = `<h3>About</h3> <p>The greatest strength of bards is their sheer versatility. Words and music are not just vibrations of air, but vocalizations with power all their own. The bard is a master of song, speech, and the magic they contain. </p>`
 
     weaponsBox.innerHTML = ` <fieldset class="weapons">
@@ -101,6 +121,16 @@ document.addEventListener('click', (event) => {
   } 
 
   if (element.matches('.cleric') === true) {
+    document.querySelector('.barbarian').style.opacity = ''
+    document.querySelector('.bard').style.opacity = ''
+    document.querySelector('.cleric').style.opacity = '100%'
+    document.querySelector('.druid').style.opacity = ''
+    document.querySelector('.fighter').style.opacity = ''
+    document.querySelector('.paladin').style.opacity = ''
+    document.querySelector('.ranger').style.opacity = ''
+    document.querySelector('.rogue').style.opacity = ''
+    document.querySelector('.warlock').style.opacity = ''
+    document.querySelector('.wizard').style.opacity = ''
     classDescription.innerHTML = `<h3>About</h3> <p>Clerics draw power from the realms of the gods and harness it to work miracles. Blessed by their deific patron, a Cleric can reach out to the divine magic of the Outer Planes—where gods dwell—and channel it to bolster people and battle foes. </p>`
 
     weaponsBox.innerHTML = ` <fieldset class="weapons">
@@ -143,6 +173,16 @@ document.addEventListener('click', (event) => {
   }
 
   if (element.matches('.druid') === true) {
+    document.querySelector('.barbarian').style.opacity = ''
+    document.querySelector('.bard').style.opacity = ''
+    document.querySelector('.cleric').style.opacity = ''
+    document.querySelector('.druid').style.opacity = '100%'
+    document.querySelector('.fighter').style.opacity = ''
+    document.querySelector('.paladin').style.opacity = ''
+    document.querySelector('.ranger').style.opacity = ''
+    document.querySelector('.rogue').style.opacity = ''
+    document.querySelector('.warlock').style.opacity = ''
+    document.querySelector('.wizard').style.opacity = ''
     classDescription.innerHTML = `<h3>About</h3> <p>Druids are an embodiment of nature’s resilience, cunning, and fury. They claim no mastery over nature. Instead, they see themselves as extensions of nature’s indomitable will.</p>`
 
     weaponsBox.innerHTML = ` <fieldset class="weapons">
@@ -185,6 +225,16 @@ document.addEventListener('click', (event) => {
   }
 
   if (element.matches('.fighter') === true) {
+    document.querySelector('.barbarian').style.opacity = ''
+    document.querySelector('.bard').style.opacity = ''
+    document.querySelector('.cleric').style.opacity = ''
+    document.querySelector('.druid').style.opacity = ''
+    document.querySelector('.fighter').style.opacity = '100%'
+    document.querySelector('.paladin').style.opacity = ''
+    document.querySelector('.ranger').style.opacity = ''
+    document.querySelector('.rogue').style.opacity = ''
+    document.querySelector('.warlock').style.opacity = ''
+    document.querySelector('.wizard').style.opacity = ''
     classDescription.innerHTML = `<h3>About</h3> <p>Fighters learn the basics of all combat styles. Every fighter can swing an axe, fence with a rapier, wield a longsword, and use a bow with some degree of skill. This combination of broad general ability makes fighters superior combatants.</p>`
 
     weaponsBox.innerHTML = ` <fieldset class="weapons">
@@ -227,6 +277,16 @@ document.addEventListener('click', (event) => {
   }
   
   if (element.matches('.paladin') === true) {
+    document.querySelector('.barbarian').style.opacity = ''
+    document.querySelector('.bard').style.opacity = ''
+    document.querySelector('.cleric').style.opacity = ''
+    document.querySelector('.druid').style.opacity = ''
+    document.querySelector('.fighter').style.opacity = ''
+    document.querySelector('.paladin').style.opacity = '100%'
+    document.querySelector('.ranger').style.opacity = ''
+    document.querySelector('.rogue').style.opacity = ''
+    document.querySelector('.warlock').style.opacity = ''
+    document.querySelector('.wizard').style.opacity = ''
     classDescription.innerHTML = `<h3>About</h3> <p>A paladin swears to uphold justice and righteousness, to stand with the good things of the world against the darkness, and to hunt the forces of evil wherever they lurk. They are bound by the oaths that grant them power to do their sacred work.</p>`
 
     weaponsBox.innerHTML = ` <fieldset class="weapons">
@@ -269,6 +329,16 @@ document.addEventListener('click', (event) => {
   }
 
   if (element.matches('.ranger') === true) {
+    document.querySelector('.barbarian').style.opacity = ''
+    document.querySelector('.bard').style.opacity = ''
+    document.querySelector('.cleric').style.opacity = ''
+    document.querySelector('.druid').style.opacity = ''
+    document.querySelector('.fighter').style.opacity = ''
+    document.querySelector('.paladin').style.opacity = ''
+    document.querySelector('.ranger').style.opacity = '100%'
+    document.querySelector('.rogue').style.opacity = ''
+    document.querySelector('.warlock').style.opacity = ''
+    document.querySelector('.wizard').style.opacity = ''
     classDescription.innerHTML = `<h3>About</h3> <p>Warriors of the wilderness, rangers specialize in hunting the monsters that threaten civilization. A ranger’s talents and abilities are honed with deadly focus on the grim task of protecting their people.</p>`
 
     weaponsBox.innerHTML = ` <fieldset class="weapons">
@@ -311,6 +381,16 @@ document.addEventListener('click', (event) => {
   }
 
   if (element.matches('.rogue') === true) {
+    document.querySelector('.barbarian').style.opacity = ''
+    document.querySelector('.bard').style.opacity = ''
+    document.querySelector('.cleric').style.opacity = ''
+    document.querySelector('.druid').style.opacity = ''
+    document.querySelector('.fighter').style.opacity = ''
+    document.querySelector('.paladin').style.opacity = ''
+    document.querySelector('.ranger').style.opacity = ''
+    document.querySelector('.rogue').style.opacity = '100%'
+    document.querySelector('.warlock').style.opacity = ''
+    document.querySelector('.wizard').style.opacity = ''
     classDescription.innerHTML = `<h3>About</h3> <p>Rogues typically focus on stealth, deception and cunning over brute strength. They would rather make one precise strike, placing it exactly where the attack will hurt the target most, than wear an opponent down with a barrage of attacks.</p>`
 
     weaponsBox.innerHTML = ` <fieldset class="weapons">
@@ -353,6 +433,16 @@ document.addEventListener('click', (event) => {
   }
 
   if (element.matches('.warlock') === true) {
+    document.querySelector('.barbarian').style.opacity = ''
+    document.querySelector('.bard').style.opacity = ''
+    document.querySelector('.cleric').style.opacity = ''
+    document.querySelector('.druid').style.opacity = ''
+    document.querySelector('.fighter').style.opacity = ''
+    document.querySelector('.paladin').style.opacity = ''
+    document.querySelector('.ranger').style.opacity = ''
+    document.querySelector('.rogue').style.opacity = ''
+    document.querySelector('.warlock').style.opacity = '100%'
+    document.querySelector('.wizard').style.opacity = ''
     classDescription.innerHTML = `<h3>About</h3> <p>A warlock is defined by a pact with an otherworldly being that grants them power. The pact may be nefarious in nature, or it may resemble the arrangement between a master and an apprentice, but it never comes without a price.</p>`
 
     weaponsBox.innerHTML = ` <fieldset class="weapons">
@@ -395,6 +485,16 @@ document.addEventListener('click', (event) => {
   }
 
   if (element.matches('.wizard') === true) {
+    document.querySelector('.barbarian').style.opacity = ''
+    document.querySelector('.bard').style.opacity = ''
+    document.querySelector('.cleric').style.opacity = ''
+    document.querySelector('.druid').style.opacity = ''
+    document.querySelector('.fighter').style.opacity = ''
+    document.querySelector('.paladin').style.opacity = ''
+    document.querySelector('.ranger').style.opacity = ''
+    document.querySelector('.rogue').style.opacity = ''
+    document.querySelector('.warlock').style.opacity = ''
+    document.querySelector('.wizard').style.opacity = '100%'
     classDescription.innerHTML = `<h3>About</h3> <p>Wizards are supreme magic-users, defined and united as a class by the spells they cast. Drawing on the subtle weave of magic that permeates the cosmos, they dedicate their lives to the study of magic and spellcasting.</p>`
 
     weaponsBox.innerHTML = ` <fieldset class="weapons">

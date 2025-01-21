@@ -1,4 +1,5 @@
 const nameInput = document.querySelector('#name');
+const charCount = document.querySelector('#char-count')
 const ageInput = document.querySelector('#age');
 const genderInput = document.querySelector('#gender');
 const heightInput = document.querySelector('#height');
@@ -7,10 +8,17 @@ const speciesInput = document.querySelector('#species');
 const continueButton = document.querySelector('#continue');
 const backButton = document.querySelector('#back');
 
+
 backButton.addEventListener('click', function() {
     window.location.href = 'index.html';
   });
 
+  console.log(nameInput)
+
+nameInput.addEventListener('input', (event) => {
+    currentLength = nameInput.value.length 
+    charCount.textContent = `(${currentLength}/20)`
+} )
 
 const speciesBox = document.querySelector('.species')
 
