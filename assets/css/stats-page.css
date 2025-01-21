@@ -4,9 +4,19 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: #464E2E;
+    color: #000000;
 }
 
-    
+header {
+    border-bottom: 1px solid;
+    border-width: 5px;
+    text-align: center;
+    font-size: 40px;
+    background-color: #362706;
+    border-color:#000000;
+    color: #ACB992;
+}
 
 .container {
     flex: 1;
@@ -25,6 +35,9 @@ body {
 .card {
     width: 100px;
     height: 100px;
+    background-color: #ACB992;
+    border: 5px solid black;
+    border-radius: 5px;
 }
 
 .weapons-spells-box {
@@ -156,7 +169,7 @@ body {
     padding: 10px;
     height: fit-content;
     text-align: center;
-
+    background-color: #ACB992;
 }
 
 
@@ -185,8 +198,9 @@ body {
 
 
 .roll-btn {
+    background-color: #362706;
+    color:#ACB992;
     font-family: "Almendra", serif;
-
     margin: 20px 0px
 }
 
@@ -196,7 +210,13 @@ body {
 }
 
 #continue {
-        margin-right: 1%
+    background-color: #362706;  
+    color:#ACB992;  
+    margin-right: 1%
+}
+
+.footer {
+    color: #ACB992;
 }
 
 

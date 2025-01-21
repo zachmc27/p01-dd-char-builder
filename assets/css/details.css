@@ -1,5 +1,6 @@
 body {
     text-align: center;
+    background-color: #464E2E;
 }
 
 header {
@@ -7,6 +8,9 @@ header {
     border-width: 5px;
     text-align: center;
     font-size: 40px;
+    background-color: #362706;
+    border-color:#000000;
+    color: #ACB992;
 }
 
 .character-name {
@@ -18,11 +22,15 @@ header {
     padding: 10px;
     font-size: 2rem;
     border-radius: 10px;
+    background-color: #ACB992;
+    border-color:#000000;
+    color: #000000;
 }
 
 #char-count {
     position: relative;
     font-size: 20px;
+    color: #ACB992;
 }
 
 .container-fluid {
@@ -36,9 +44,17 @@ header {
     padding: 1px;
     overflow: hidden;
     border-radius: 10px;
+    border-color: #000000;
 }
 
+.form-control {
+    background-color: #ACB992;
+}
 
+.btn.btn-outline-dark {
+    background-color:#362706;
+    color:  #ACB992;
+}
 
 .dropdown-toggle {
     padding: 16px;
@@ -46,11 +62,14 @@ header {
     border: none;
     cursor: pointer;
     border-radius: 10px;
+    background-color: #362706;
 }
 
 #continue {
     margin-top: 30px;
     margin-right: 2%;
+    background-color: #ACB992;
+    color: #000000;
 }
 
 #back{
@@ -67,13 +86,17 @@ header {
     width: 62%;
     padding: 20px;
     text-align: center;
+    border-color:#000000;
+    color: #000000;
+    background-color: #ACB992;
 }
 
 #choose-species-text {
-    color: rgb(0, 0, 0, .3);
+    color: #000000;
     margin: 50px
 }
 
 footer p {
     text-align: center;
+    color:#ACB992;
 }

@@ -1,3 +1,17 @@
+body {
+    background-color: #464E2E;
+}
+
+header {
+    border-bottom: 1px solid;
+    border-width: 5px;
+    text-align: center;
+    font-size: 40px;
+    background-color: #362706;
+    border-color:#000000;
+    color: #ACB992;
+}
+
 .btn-danger {
     margin-top: 1%;
     margin-left: 1%;
@@ -11,55 +25,78 @@
 
 .col-sm-8 {
     margin-top: 2%;
+    background-color: #ACB992;
 }
 
 .col-sm-1 {
     margin-top: 2%;
     margin-left: 5%;
     margin-right: 5%;
+    background-color: #ACB992;
+}
+
+.container-sc {
+    background-color: #ACB992;
+    color: #000000;
+}
+
+.container-s {
+    background-color: #ACB992;
+    color: #000000;
+}
+
+.container-b {
+    background-color: #ACB992;
+    color: #000000;
 }
 
 .con {
     margin-top: 8%;
     max-width: 50%;
     text-align: center;
+    color: #000000;
 }
 
 .str {
     margin-top: 8%;
     max-width: 50%;
     text-align: center;
+    color: #000000;
 }
 
 .int {
     margin-top: 8%;
     max-width: 50%;
     text-align: center;
+    color: #000000;
 }
 
 .wis {
     margin-top: 8%;
     max-width: 50%;
     text-align: center;
+    color: #000000;
 }
 
 .dex {
     margin-top: 8%;
     max-width: 50%;
     text-align: center;
+    color: #000000;
 }
 
 .cha {
     margin-top: 8%;
     max-width: 50%;
     text-align: center;
+    color: #000000;
 }
 
 .row.gy-5 {
     margin-top: 0%;
 }
 
-.btn.btn-primary {
+.btn.btn-dark {
     margin-top: 2%;
     margin-left: 20%;
     margin-right: 20%;
@@ -67,4 +104,5 @@
 
 .footer {
     margin-top: 2%;
+    color: #ACB992;
 }

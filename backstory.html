@@ -15,10 +15,11 @@
 <body>
 
 <div class="header">
-<header> 
-    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-    <button type="button" class="btn btn-danger" id="back-btn">Back</button></div> 
-    <h1>D&D Character Builder</h1>
+  <header>
+    <div class="d-grid gap-2 d-md-flex justify-content-md-start text-center">
+        <button type="button" id="back" class="btn btn-danger text-center" id="back">Back</button>
+    </div>
+D&D Character Builder
 </header>
 </div>
 </head>
@@ -29,7 +30,7 @@
     <p><h4>Character Details:</h4></p>
 </div>
 <div class="appearance">
-    <div class="form-floating" style="border: 4px solid black;">
+    <div class="form-floating">
         <textarea class="form-control" placeholder="Leave a comment here" id="appearance" style="height: 100px"></textarea>
         <label for="floatingTextarea2">Your character's appearance details...</label>
       </div>
@@ -40,7 +41,7 @@
     <p><h4>Character Backstory:</h4></p>
 </div>
 <div class="backstory">
-    <div class="form-floating"style="border: 4px solid black;">
+    <div class="form-floating">
         <textarea class="form-control" placeholder="Leave a comment here" id="backstory" style="height: 300px"></textarea>
         <label for="floatingTextarea2">Your character's backstory...</label>
       </div>
@@ -49,7 +50,7 @@
 
 
 <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#submission" id="submit-btn">Submit</button>
+    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#submission" id="submit-btn">Submit</button>
   </div>
 
 
@@ -60,17 +61,17 @@
   <!-- Modal -->
   <div class="modal fade" id="submission" tabindex="-1" aria-labelledby="submissionLabel" aria-hidden="true">
     <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="submissionLabel">Is your character ready?</h1>
+      <div class="modal-content" style="background-color: #464E2E;">
+        <div class="modal-header" style="background-color: #362706;">
+          <h1 class="modal-title fs-5" id="submissionLabel" style="color: #ACB992;">Is your character ready?</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
+        <div class="modal-body" style="color: #ACB992;">
           <p>By clicking 'Complete' you are saving your character to your gallery. If you are not yet finished with your character, click 'Cancel' to return to the character builder.</p>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-          <button type="button" class="btn btn-primary" id="complete-btn">Complete</button>
+        <div class="modal-footer" style="background-color: #362706;">
+          <button type="button" class="btn btn-dark" data-bs-dismiss="modal" style="background-color: #464E2E;" style="color: #ACB992;">Cancel</button>
+          <button type="button" class="btn btn-success" id="complete-btn" style="color: #362706; background-color: #ACB992;">Complete</button>
         </div>
       </div>
     </div>
@@ -86,7 +87,7 @@
 
 <footer>
 <div class="footer">
-<p>Created for project 1 by Group 11.</p>
+<p>Project 1 by Group 11.</p>
 </div>
 </footer>
 </html>
