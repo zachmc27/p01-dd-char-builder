@@ -3,8 +3,26 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstra
     html: true
 }))
 
+const characterData = {
+    name: readLocalStorage(name),
+    ac: ``,
+    species: ``,
+    class: ``,
+    con: ``,
+    str: ``,
+    int: ``,
+    wis: ``,
+    dex: ``,
+    cha: ``,
+    abilities: ``,
+    items: ``,
+    details: ``,
+    backstory: ``,
+
+}
+
 document.addEventListener("DOMContentLoaded", () => {
-    const characterData = readLocalStorage();
+    console.log(characterData)
 
     if (characterData) {
         populateCharacterSheet(characterData);

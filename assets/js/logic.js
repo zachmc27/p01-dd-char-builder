@@ -15,6 +15,8 @@ function storeLocalStorage (data) {
       location.assign(url);
     };
 
+    
+
 
 
     
