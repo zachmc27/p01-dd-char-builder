@@ -4,6 +4,17 @@ const backButton = document.querySelector('#back');
 const weaponsBox = document.querySelector('.weapons-box');
 const spellsBox = document.querySelector('.spells-box')
 const classDescription = document.querySelector('.class-description')
+const rollButton = document.querySelector('#roll');
+const conValue = document.querySelector(".con-value");
+const strValue = document.querySelector(".str-value");
+const intValue = document.querySelector(".int-value");
+const wisValue = document.querySelector(".wis-value");
+const dexValue = document.querySelector(".dex-value");
+const chaValue = document.querySelector(".cha-value");
+const acValue = document.querySelector(".ac-value");
+let statsArray = [0, 0, 0, 0, 0, 0, 0]; //awful synatx
+
+
 
 
 backButton.addEventListener('click', function() {
@@ -538,5 +549,46 @@ document.addEventListener('click', (event) => {
 console.log(document.querySelector('.class-data').textContent)
 
 })
+
+//loads on refresh
+if(localStorage.getItem("statsArray") != null) {
+  restoreValue();
+}
+
+function restoreValue() {
+  let array = JSON.parse(localStorage.getItem("statsArray"));
+  conValue.textContent = array[0];
+  strValue.textContent = array[1];
+  intValue.textContent = array[2];
+  wisValue.textContent = array[3];
+  dexValue.textContent = array[4];
+  chaValue.textContent = array[5];
+  acValue.textContent =  array[6];
+}
+
+// RNG Stuff
+
+function getRandomIntForStats(max) {
+  let value = Math.floor(Math.random() * max);
+  value++; //shifts values up removing zero values
+  return value;
+}
+
+rollButton.addEventListener('click', function() { 
+  //if(localStorage.getItem("statsArray") == null) { //allow re-roll for debug
+    for(let i=0; i < statsArray.length; i++) {
+      statsArray[i] = getRandomIntForStats(20);
+    }
+    conValue.textContent = statsArray[0];
+    strValue.textContent = statsArray[1];
+    intValue.textContent = statsArray[2];
+    wisValue.textContent = statsArray[3];
+    dexValue.textContent = statsArray[4];
+    chaValue.textContent = statsArray[5];
+    acValue.textContent =  statsArray[6];
+
+    localStorage.setItem("statsArray", JSON.stringify(statsArray));
+  //}
+});
 
 
