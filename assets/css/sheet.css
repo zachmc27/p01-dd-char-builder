@@ -103,7 +103,13 @@ header {
 }
 
 .backstory-box {
-    max-height: 252.8px
+    max-height: 252.8px;
+    background-color: #ACB992
+}
+
+.species-box,
+.class-box {
+    background-color: #ACB992 ;
 }
 
 .footer {

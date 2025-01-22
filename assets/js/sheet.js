@@ -82,7 +82,11 @@ backButton.addEventListener('click', function() {
 console.log(characterArray)
 
 returnButton.addEventListener('click', function() {
-    characterArray.push(characterData)
+    if (!characterArray.includes(characterData.name)) {
+        characterArray.push(characterData)
+        localStorage.setItem('characterList', JSON.stringify(characterArray))
+    }
+    
     localStorage.setItem('characterList', JSON.stringify(characterArray))
     window.location.href = 'index.html';
   });

@@ -1,7 +1,8 @@
 
 const indexCharacterArray = JSON.parse(localStorage.getItem('characterList')) || []
 const characterCards = document.querySelector('.character-cards')
-console.log(indexCharacterArray)
+
+
 
 
 
@@ -9,7 +10,7 @@ function populateCharacterCards () {
   for (let i = 0; i < indexCharacterArray.length; i++) {
     characterCards.innerHTML += `
     
-    <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="col-lg-4 col-md-6 col-sm-12 goto-sheet-${i}">
           <section class="card border bg-light">
             <div class="char-banner">
               <p>${indexCharacterArray[i].name}</p>
@@ -19,7 +20,13 @@ function populateCharacterCards () {
           </section>
         </div>
     `
+    const gotoSheet = document.querySelector(`.goto-sheet-${i}`)
+  gotoSheet.addEventListener('click', () => {
+    window.location.href = 'sheet.html';
+
+  })
   }
+  
 }
 
 populateCharacterCards()
@@ -28,3 +35,4 @@ const startButton = document.querySelector('#create-card');
 startButton.addEventListener('click', function() {
     window.location.href = 'details.html';
   });
+
