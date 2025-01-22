@@ -219,4 +219,34 @@ header {
     color: #ACB992;
 }
 
+@media screen and (max-width: 776px) {
+    .weapons-box h3,
+.spells-box h3,
+.class-description h3{
+    font-size: 20px;
+}
+
+p {
+    font-size: 15px
+}
+
+.label-size {
+    font-size: 20px;
+}
+
+.weapons-box label {
+    font-size: 15px;
+}
+
+.spells-box label {
+    font-size: 15px;
+}
+}
+@media screen and (max-width: 542px) {
+    .weapons-box h3,
+.spells-box h3,
+.class-description h3{
+    font-size: 15px;
+}
+}
 

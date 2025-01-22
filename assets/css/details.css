@@ -100,3 +100,9 @@ footer p {
     text-align: center;
     color:#ACB992;
 }
+
+@media screen and (max-width: 582px) {
+    .character-name {
+        font-size: 1rem;
+    }
+}
