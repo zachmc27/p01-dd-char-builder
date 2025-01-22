@@ -10,8 +10,8 @@ TECHNOLOGIES:
 To create this project we utilized the Bootstrap CSS framework. This is how we created elements such as the drop down menu on the details page.
 
 SCREENSHOTS:
--add screenshot of home page
--screenshots of other pages?
 
-LINKS:
--add links to deployed application
+(https://github.com/user-attachments/assets/d6871847-4260-4ff3-ad82-065cbe11463a)
+
+
+LINK: https://zachmc27.github.io/p01-dd-char-builder/
