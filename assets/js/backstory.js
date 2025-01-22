@@ -7,7 +7,7 @@ const backButtonEl = document.querySelector('btn-danger')
 document.addEventListener('click', (event) => {
     const element = event.target
     
-    if (element.matches('#back-btn') === true) {
+    if (element.matches('#back') === true) {
         redirectPage('stats.html')
     }
 })
